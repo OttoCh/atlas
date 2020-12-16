@@ -1,0 +1,8 @@
+1. Main Function
+As performance monitor vs as process notebook
+Program ini pertama kali dibagun sebagai catatan untuk membandingkan apakah ada service / process baru yg mmuncul setelah instalasi?
+sebagai performance monitor hal ini tidak akan efektif karena performance toh bisa diawasi di tab task manager dan terutama karena program yang kita buat tidak dirancang untuk melakukan monitoring second by second.
+
+2. We use node-sqlite3
+https://github.com/mapbox/node-sqlite3
+yes this is a deprecated lib. I dont know until it is too late.

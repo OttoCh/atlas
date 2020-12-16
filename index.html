@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+
+    <main class="content-wraper" id="content-wraper">
+    	<div class="content-blk">
+               Hello.. This is my first desktop app    
+               <button id="loadnewwindow">click to load new window</button>
+             <div id=”message”></div>
+                <button id="runservice">click to run service</button>
+                <button id="testdb"> click to test db</button>
+    	</div>
+    </main>
+
+        <script type="text/javascript">
+            if (typeof module === 'object') {window.module = module; module = undefined;}
+            if(window.module) module = window.module;
+        </script>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    const ipcRenderer = require('electron').ipcRenderer;
+    const btnclick = document.getElementById('loadnewwindow');
+    btnclick.addEventListener('click', function(){
+        var arg = "secondparam";
+        ipcRenderer.send("btnclick", arg);
+        console.log("open new page")
+    });
+</script>
+
+<script type="text/javascript">
+    const ipcRenderer2 = require('electron').ipcRenderer;
+    const ipcRenderer3 = require('electron').ipcRenderer;
+    const btnclick2 = document.getElementById('runservice');
+    const btnclick3 = document.getElementById('testdb');
+    btnclick2.addEventListener('click', function() {
+        var arg = "secondparam";
+        ipcRenderer2.send('runservice', arg);
+        console.log('run service')
+    })
+    btnclick3.addEventListener('click', function() {
+        var arg = "thirdparam";
+        ipcRenderer3.send('testDB', arg);
+        console.log('testing db')
+    })
+
+</script>
+

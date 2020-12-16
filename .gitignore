@@ -1,0 +1,124 @@
+Skip to content
+Search or jump to…
+
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@OttoCh 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+electron
+/
+electron
+2.9k
+🔖 Custom notification settings
+Looking for a little more control? Now you can choose which types of activity you’d like to be notified about per repository.
+
+88.1k11.8k
+Code
+Issues
+1.4k
+Pull requests
+88
+Actions
+Projects
+12
+Security
+6
+Insights
+electron/.gitignore
+@MarshallOfSound
+MarshallOfSound build: fix JS linting (#26876)
+Latest commit 51db2a6 5 days ago
+ History
+ 16 contributors
+@zcbenz@MarshallOfSound@jkleinsc@zeke@nornagon@deepak1556@tarruda@kevinsawicki@omrilitov@miniak@kwonoj@kanemontreuil
+71 lines (62 sloc)  1.12 KB
+  
+.DS_Store
+.env
+.gclient_done
+**/.npmrc
+.tags*
+.vs/
+.vscode/
+*.log
+*.pyc
+*.sln
+*.swp
+*.VC.db
+*.VC.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.xcodeproj
+/.idea/
+/dist/
+/external_binaries/
+/out/
+/vendor/.gclient
+/vendor/debian_jessie_mips64-sysroot/
+/vendor/debian_stretch_amd64-sysroot/
+/vendor/debian_stretch_arm-sysroot/
+/vendor/debian_stretch_arm64-sysroot/
+/vendor/debian_stretch_i386-sysroot/
+/vendor/gcc-4.8.3-d197-n64-loongson/
+/vendor/readme-gcc483-loongson.txt
+/vendor/download/
+/vendor/llvm-build/
+/vendor/llvm/
+/vendor/npm/
+/vendor/python_26/
+/vendor/native_mksnapshot
+/vendor/LICENSES.chromium.html
+/vendor/pyyaml
+node_modules/
+SHASUMS256.txt
+**/package-lock.json
+compile_commands.json
+.envrc
+
+# npm package
+/npm/dist
+/npm/path.txt
+
+.npmrc
+
+# Generated API definitions
+electron-api.json
+electron.d.ts
+
+# Spec hash calculation
+spec/.hash
+
+# Eslint Cache
+.eslintcache*
+
+# Generated native addon files
+/spec-main/fixtures/native-addon/echo/build/
+
+# If someone runs tsc this is where stuff will end up
+ts-gen
+
+# Used to accelerate CI builds
+.depshash
+.depshash-target
+
+# Used to accelerate builds after sync
+patches/mtime-cache.json
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
